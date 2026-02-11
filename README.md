@@ -1,2 +1,2 @@
-# mi-portafolio
-Este es mi portafolio
+# Mi portafolio
+Acá podés encontrar carpetas con algunas cosas que hice.
