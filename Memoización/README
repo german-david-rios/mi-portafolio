@@ -1,0 +1,16 @@
+Este es un ejemplo de memoización llevado a cabo en el lenguaje C.
+
+Se trata de una programa que espera un archivo  de valores "values.bin" que tendrá datos de entrada para una función recursiva.
+
+La función puede definirse como:
+- recur(0,b) = b%71
+- recur(a,255) = recur(a-1,97) + recur(a-1,56) + recur(a,0)
+- recur(a,b) = recur(a-1,b+1)
+
+El programa calcula los valores de cada par de entradas y va realizando la tarea de memoizarlos; esto lo hace con la ayuda de una matriz de estructuras que continen un campo booleano indicando si ya hay valor y un campo para el valor.
+
+Luego el programa también crea un archivo de datos "DATA" donde alacenará losvalores ya memoizados ara poder utilizarlos en futuros procesamientos.
+
+
+
+Se deja un archivo de valores con 10000 pares de datos generados de forma aleatoria (20 KB)
