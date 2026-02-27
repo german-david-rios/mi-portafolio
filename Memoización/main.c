@@ -3,22 +3,17 @@
 
 #include <stdlib.h>
 
-#include <windows.h>
-
 struct datanode {
     unsigned char dat;
     unsigned char is;
 };
 
 /*
-
   definicion de la funcion recursiva utilizada:
 
   recur(0,b) = b%71
   recur(a,255) = recur(a-1,97) + recur(a-1,56) + recur(a,0)
   recur(a,b) = recur(a-1,b+1)
-
-  es decir mucho pero no es muy interesante
 
  */
 
@@ -114,6 +109,7 @@ int main()
     return 0;
 }
 //*/
+
 
 
 
