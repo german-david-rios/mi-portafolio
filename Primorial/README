@@ -1,7 +1,7 @@
 En este ejemplo vemos como se puede calcular el primorial de un número.
 
 El primorial de un número, denotado 'n#' es el producto de todos los primos menores o iguales a ese número:
-$$ n# = \prod_{i=1}^{\pi (n)} p_i $$
+$$n# = \prod_{i=1}^{\pi (n)} p_i$$
 
 Por ejemplo: '5#' = 5 * 3 * 2 = 30
              '6#' = 5 * 3 * 2 = 30
