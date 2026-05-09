@@ -5,6 +5,9 @@ Aclaración: sé que justamente esto no es tokenizar, pero bueh, no me voy a pon
 
 Se ve en el main el ejemplo de uso de my\_strtokplus, que sigue una forma común en el uso de strtok.
 
-A diferencia de strtok, y se nota en comparación, no salta todos los tokens aledaneos de un tirón sinó que trata de leer y devuelve cadenas vacías.
+[Change #1] A diferencia de strtok, y se nota en comparación, no salta todos los tokens aledaneos de un tirón sinó que trata de leer y devuelve cadenas vacías.
 Es un problema que se debería arreglar en el futuro.
+
+Changes.
+Change #1: ya se ha logrado la forma de tratar tokens aledaneos en un string, se logra un resultado muy idéntico a strtok.
 
