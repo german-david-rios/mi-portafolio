@@ -29,7 +29,7 @@ int main()
 
 char * my_strtokplus(const char * work_str,  const char * tokens_s, int * n){
     static char * rem = NULL;
-    int ret_n = 0;
+    int ret_n = 0, token_offset = 0;
 
     if(work_str == NULL){
         if(rem == NULL){
@@ -40,10 +40,21 @@ char * my_strtokplus(const char * work_str,  const char * tokens_s, int * n){
         }
     }
 
-    while(work_str[ret_n] != '\0'){
+    while(work_str[token_offset] != '\0'){
         for(int i = 0; i < (int) strlen(tokens_s); i++){
-            if(work_str[ret_n] == tokens_s[i]){
-                rem = (char *) work_str+ret_n+1;
+            if(work_str[token_offset] == tokens_s[i]){
+                goto continue_while;
+            }
+        }
+        break;
+        continue_while:
+        token_offset++;
+    }
+
+    while(work_str[token_offset+ret_n] != '\0'){
+        for(int i = 0; i < (int) strlen(tokens_s); i++){
+            if(work_str[token_offset+ret_n] == tokens_s[i]){
+                rem = (char *) work_str+token_offset+ret_n+1;
                 goto outside_while;
             }
         }
@@ -56,5 +67,5 @@ char * my_strtokplus(const char * work_str,  const char * tokens_s, int * n){
     }
 
     *n = ret_n;
-    return (char *) work_str;
+    return (char *) work_str+token_offset;
 }
