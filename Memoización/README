@@ -9,7 +9,7 @@ La función puede definirse como:
 
 El programa calcula los valores de cada par de entradas y va realizando la tarea de memoizarlos; esto lo hace con la ayuda de una matriz de estructuras que continen un campo booleano indicando si ya hay valor y un campo para el valor.
 
-Luego el programa también crea un archivo de datos "DATA" donde alacenará losvalores ya memoizados ara poder utilizarlos en futuros procesamientos.
+Luego el programa crea un archivo de datos "DATA" donde almacenará los valores ya memoizados para poder utilizarlos en futuros procesamientos.
 
 
 
