@@ -12,7 +12,7 @@ int main()
     char buffer[500], *aux;
     int i = 1, wlen;
 
-    fgets(buffer, sizeof(buffer), stdin);
+    fgets(buffer, sizeof(buffer), stdin); // doesn´t care if it reads the '\n' or not.
 
     puts("input word's:");
 
