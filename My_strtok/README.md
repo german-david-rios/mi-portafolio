@@ -3,6 +3,8 @@ En este ejemplo vemos una implementación propia copia de la función strtok de 
 Aclaración: sé que justamente esto no es tokenizar, pero bueh, no me voy a poner a debatir que es.
 
 
-
 Se ve en el main el ejemplo de uso de my\_strtokplus, que sigue una forma común en el uso de strtok.
+
+A diferencia de strtok, y se nota en comparación, no salta todos los tokens aledaneos de un tirón sinó que trata de leer y devuelve cadenas vacías.
+Es un problema que se debería arreglar en el futuro.
 
